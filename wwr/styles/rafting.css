@@ -149,6 +149,38 @@ article {
     align-items: center;
 }
 
+.company-form fieldset {
+    grid-column: 1 / -1;
+    border: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 140px 1fr;
+    gap: 1rem;
+    align-items: center;
+}
+
+.company-form legend {
+    grid-column: 1;
+    font-weight: bold;
+    color: #333;
+    padding-top: 0.2rem;
+}
+
+.radio {
+    grid-column: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    margin-top: -45px;
+}
+
+.radio label {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
 .company-form > label {
     font-weight: bold;
     color: #333;
@@ -160,28 +192,6 @@ article {
     padding: 0.4rem;
     border: 1px solid #777;
     border-radius: 3px;
-}
-
-.company-form legend {
-    font-weight: bold;
-    color: #333;
-    align-self: start;
-}
-
-.radio {
-    display: flex;
-    flex-direction: column;
-    gap: 0.4rem;
-}
-
-.radio label {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    font-weight: normal;
-    margin: 0;
-    padding: 0;
-    cursor: pointer;
 }
 
 .radio input[type="radio"] {
