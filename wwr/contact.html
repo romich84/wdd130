@@ -38,7 +38,7 @@
                   width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
                   referrerpolicy="strict-origin-when-cross-origin"></iframe>
             </div>
-            <form action="">
+            <form>
                 <div class="company-form">
                     <label for="name">Name</label>
                     <input type="text" id="name" name="name" placeholder="Romina Chazarreta"
@@ -46,16 +46,18 @@
                     <label for="useremail">Email</label>
                     <input type="email" id="useremail" name="useremail" placeholder="user@email.com"
                       required>
-                    <legend>Message Purpose</legend>
-                    <div class="radio">
-                        <label><input type="radio" name="general" value="general">General
-                            Inquiry</label>
-                        <label><input type="radio" name="reservation"
-                              value="reservation">Reservation
-                            Question</label>
-                        <label><input type="radio" name="website" value="website">Website
-                            Suggestion</label>
-                    </div>
+                    <fieldset>
+                        <legend>Message Purpose</legend>
+                        <div class="radio">
+                            <label><input type="radio" name="general" value="general">General
+                                Inquiry</label>
+                            <label><input type="radio" name="reservation"
+                                  value="reservation">Reservation
+                                Question</label>
+                            <label><input type="radio" name="website" value="website">Website
+                                Suggestion</label>
+                        </div>
+                    </fieldset>
                     <div class="company-form2">
                         <label for="message">Message</label>
                         <textarea name="message" id="message" rows="4"
@@ -65,7 +67,7 @@
                             <label for="subscription">Please Subscribe me to the monthly
                                 newsletter</label>
                         </div>
-                        <button>Get it in touch!</button>
+                        <button type="submit">Get it in touch!</button>
                     </div>
                 </div>
             </form>
