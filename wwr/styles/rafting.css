@@ -361,3 +361,356 @@ footer {
     width: 40px;
     height: auto;
 }
+
+/* HOME PAGE */
+
+/* Hero image */
+
+.hero {
+    position: relative;
+    width: 100%;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    padding: 1rem;
+    background-color: rgba(38, 70, 83, 0.8);
+    color: white;
+    text-align: center;
+}
+
+/* Introduction */
+
+.home-intro {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 1rem;
+    text-align: center;
+}
+
+/* CSS Grid layout */
+
+.home-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    max-width: 1100px;
+    margin: 2rem auto;
+    padding: 1rem;
+}
+
+.home-card {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-content: start;
+    gap: 1rem;
+    text-align: center;
+}
+
+.home-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.home-card h2 {
+    color: var(--primary-color);
+}
+
+.home-card p {
+    line-height: 1.6;
+}
+
+/* Call to action */
+
+.home-cta {
+    padding: 2rem;
+    background-color: var(--accent1-color);
+    color: white;
+    text-align: center;
+}
+
+.cta-button {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.8rem 1.5rem;
+    background-color: var(--secondary-color);
+    color: #000;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.cta-button:hover {
+    background-color: var(--accent2-color);
+}
+
+/* Newsletter */
+
+.newsletter {
+    max-width: 650px;
+    margin: 2rem auto;
+    padding: 2rem;
+    text-align: center;
+}
+
+.newsletter form {
+    display: grid;
+    gap: 1rem;
+    margin-top: 1.5rem;
+    text-align: left;
+}
+
+.newsletter-field {
+    display: grid;
+    gap: 0.5rem;
+}
+
+.newsletter-field input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0.7rem;
+    border: 1px solid #777;
+    border-radius: 4px;
+    font: inherit;
+}
+
+.newsletter button {
+    padding: 0.8rem;
+    border: none;
+    border-radius: 4px;
+    background-color: var(--primary-color);
+    color: white;
+    font: inherit;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.newsletter button:hover {
+    background-color: var(--accent1-color);
+}
+
+/* Responsive layout */
+
+@media screen and (max-width: 700px) {
+    .home-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero img {
+        height: 300px;
+    }
+
+    .home-cta {
+        padding: 1.5rem 1rem;
+    }
+}
+
+/* Trips hero section */
+
+.trips-hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 250px;
+    padding: 2rem 1rem;
+    background-color: var(--accent1-color);
+    color: white;
+    text-align: center;
+}
+
+.trips-hero h1 {
+    position: static;
+    width: 100%;
+    margin: 0 0 1rem;
+    padding: 0;
+    background-color: transparent;
+    color: white;
+    font-size: 2.5rem;
+}
+
+.trips-hero p {
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+/* Introduction */
+.trips-intro {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 1rem;
+    text-align: center;
+}
+
+.trips-intro h2 {
+    color: var(--primary-color);
+}
+
+.trips-intro p {
+    line-height: 1.7;
+}
+
+/* Trip cards with CSS Grid */
+.trips-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 1rem;
+}
+
+.trip-card {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.trip-card img {
+    display: block;
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+}
+
+.trip-content {
+    padding: 1.2rem;
+}
+
+.trip-content h2 {
+    color: var(--primary-color);
+    text-align: center;
+}
+
+.trip-content p {
+    line-height: 1.6;
+}
+
+.trip-content ul {
+    padding-left: 1.2rem;
+    line-height: 1.8;
+}
+
+/* Trip comparison table */
+.trip-comparison {
+    max-width: 1100px;
+    margin: 3rem auto;
+    padding: 1rem;
+    text-align: center;
+}
+
+.trip-comparison h2 {
+    color: var(--primary-color);
+}
+
+.trip-comparison p {
+    line-height: 1.6;
+}
+
+.trip-comparison table {
+    width: 100%;
+    margin-top: 2rem;
+    border-collapse: collapse;
+}
+
+.trip-comparison caption {
+    padding: 1rem;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.trip-comparison th,
+.trip-comparison td {
+    padding: 1rem;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+.trip-comparison thead th {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.trip-comparison tbody th {
+    background-color: var(--accent2-color);
+}
+
+.trip-comparison tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Contact call to action */
+.trips-cta {
+    padding: 3rem 1rem;
+    background-color: var(--accent1-color);
+    color: white;
+    text-align: center;
+}
+
+.trips-cta h2 {
+    margin-bottom: 1rem;
+}
+
+.trips-cta p {
+    max-width: 700px;
+    margin: 0 auto 1.5rem;
+    line-height: 1.6;
+}
+
+.trips-button {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    background-color: var(--secondary-color);
+    color: #000;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.trips-button:hover {
+    background-color: var(--accent2-color);
+}
+
+/* Responsive layout */
+@media screen and (max-width: 900px) {
+    .trips-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .trips-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .trips-hero h1 {
+        font-size: 2rem;
+    }
+
+    .trip-comparison {
+        padding: 0.5rem;
+    }
+
+    .trip-comparison th,
+    .trip-comparison td {
+        padding: 0.5rem;
+        font-size: 0.85rem;
+    }
+}
